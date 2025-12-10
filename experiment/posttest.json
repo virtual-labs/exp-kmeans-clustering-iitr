@@ -1,39 +1,52 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+[
+  {
+    "question": "The initialization step in the K-means Clustering algorithm involves randomly selecting ________ as initial cluster centroids.",
+    "answers": {
+      "a": "Data points",
+      "b": "Cluster indices",
+      "c": "Cluster labels",
+      "d": "Centroid coordinates"
     },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+    "correctAnswer": "a"
+  },
+  {
+    "question": "K-means Clustering is an unsupervised learning algorithm used for __________.",
+    "answers": {
+      "a": "Classification",
+      "b": "Regression",
+      "c": "Dimensionality reduction",
+      "d": "Clustering"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "In K-means Clustering, K refers to __________.",
+    "answers": {
+      "a": "The number of clusters",
+      "b": "The distance metric",
+      "c": "The centroid initialization method",
+      "d": "The number of iterations"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Which step in the K-means algorithm involves reassigning data points to their closest centroids?",
+    "answers": {
+      "a": "Centroid initialization",
+      "b": "Cluster assignment",
+      "c": "Centroid update",
+      "d": "Convergence check"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "K-means Clustering is sensitive to __________.",
+    "answers": {
+      "a": "Initial centroid placement",
+      "b": "The number of dimensions in the data",
+      "c": "Outliers in the data",
+      "d": "All of the above"
+    },
+    "correctAnswer": "d"
+  }
+]
