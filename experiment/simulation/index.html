@@ -1,13 +1,152 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+<html lang="en">
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container" id="box">
+        <!-- Instructions -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2 style="text-align: left;">Instructions</h2>
+                </div>
+                <div class="modal-body">
+                    <p>
+                    <ol type="1" style="font-size: 20px; text-align: justify;">
+                        <li>Click on the <b>CREATE</b> tab.</li>
+                        <li>Enter the values of <b>X</b> and <b>Y</b> in the attributes section and click on the <b>ADD</b> button to add values to the table.</li>
+                        <li>Repeat steps 2 until there are <b>6</b> data-points in the table.</li>
+                        <li>Click on the <b>NEXT</b> button to specify the number of clusters (K) you want to form,
+                           select the value of clusters, click on the <b>SUBMIT</b> button, and then again click on the <b>NEXT</b> button.</li>
+                    
+                        <li>Now, initialize centroids by selecting K centroids and clicking on the <b>SUBMIT</b> button. Afterward, click on the <b>NEXT</b> button.
+                        </li>
+                        <li>Find the <b>euclidean distance</b> between a centroid and a data point by clicking on the buttons below the table.
+                        </li>
+                        <li>
+                          Now, determine the cluster assignment for the data point. To proceed, click on the highlighted cell (K) in the table and enter the corresponding cluster number. <b>Hint:</b> Provide the position of the minimum value (e.g., 1.)
+                        </li>
+                        <li>
+                          Repeat steps 7 & 8 for all the data points in the table.
+                        </li>
+              
+                        <li>
+                          Click on the <b>CENTROIDS</b> button to compute the new centroid of each
+                          cluster.
+                        </li>
+                        <li>
+                          Repeat steps 7 to 9 until no data points change clusters.
+                        </li>
+                        <li>If the old cluster matches the new cluster, click on the <b>NEXT</b> button to proceed further.</li>
+                        <li>Finally, click on the <b>PLOT</b> button to display the graph.</li>
+                        <p><b style="color:#FF6600">NOTE 1: </b>Euclidean distance values are rounded to two decimal places.</p>
+                        <p><b style="color:#FF6600">NOTE 2: </b>Read the alerts properly.</p>
+                    </ol>
+                   
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- header -->
+        <header class="header">
+            <div class="tabs">
+
+                <!-- tabs -->
+                <div id="tab-1" style="display: flex; border-right: 2px solid black; color: white;" onclick="window.location.href='DataCreate.html'">
+                    <div class="tab-create ">
+                        <a href="DataCreate.html" class="tab-text" style="color:white;font-weight: bold;"> CREATE</a>
+                    </div>
+                    <img src="images/create.png" style="margin-top: 3px; margin-right: 10px; height: 85%" alt="" onclick="window.location.href='DataCreate.html'">
+
+                </div>
+                <div id="tab-2" style="display: flex; border-right: 2px solid black; color: white;cursor:not-allowed;">
+                    <div class="tab-create" style="cursor:not-allowed;">
+                        COMPUTE
+                    </div>
+                    <img src="images/calculator.png"
+                        style="margin-top: 3px; margin-right: 10px; height: 85%;cursor:not-allowed;" alt="">
+                </div>
+                <div id="tab-3" style="display: flex; border-right: 2px solid black; color: white;cursor:not-allowed;">
+                    <div class="tab-create" style="cursor:not-allowed;">
+                        ANALYZE
+                    </div>
+                    <img src="images/ANALYSIS.png" class="disableCompute"
+                        style="margin-top: 3px; margin-right: 10px; height: 85%;" id="calImg" alt="">
+                </div>
+            </div>
+            <div class="instruction-container">
+                <a class="header-text" id="myBtn" style="padding-top: 5px" href="#">INSTRUCTIONS</a>
+            </div>
+        </header>
+
+        <div style="width:80%;margin-top: 2.3in; margin-left: 1in;">
+            <center>
+                <p style="color:white;font-size: 24px;text-align: justify;">
+                     
+The k-means experiment aims to partition a dataset into k distinct clusters by iteratively assigning data points to the cluster
+ with the nearest centroid and updating the centroids based on the mean of the assigned points. To begin, click on the <b style="color:#FF6600;">CREATE</b> tab.
+                 </p>
+                 
+            </center>
+            
+        </div>
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <span class="footer-text">© 2025 Virtual Labs, IIT Roorkee</span>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+    <script>
+
+
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var modalBtn = document.getElementById("myBtn");
+        // var modalBtn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var closeBtn = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        modalBtn.addEventListener("click", function () {
+            modal.style.display = "block";
+        });
+
+        // When the user clicks on <span> (x), close the modal
+        closeBtn.addEventListener("click", function () {
+            modal.style.display = "none";
+        });
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.addEventListener("click", function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+        const myContainer = document.getElementById('box');
+        </script>
 </body>
+
 </html>

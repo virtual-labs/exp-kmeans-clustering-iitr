@@ -1,39 +1,52 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+[
+  {
+    "question": "In K-means Clustering, the number of clusters to be formed is denoted by the parameter ________.",
+    "answers": {
+      "a": "K",
+      "b": "C",
+      "c": "N",
+      "d": "P"
     },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+    "correctAnswer": "a"
+  },
+  {
+    "question": "The ________ is a measure used in K-means Clustering to calculate the similarity between a data point and a cluster centroid.",
+    "answers": {
+      "a": "Euclidean distance",
+      "b": "Manhattan distance",
+      "c": "Hamming distance",
+      "d": "Cosine similarity"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "K-means Clustering can be applied to which type(s) of data?",
+    "answers": {
+      "a": "Numerical data",
+      "b": "Categorical data",
+      "c": "Both numerical and categorical data",
+      "d": "Image data"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "The centroid in K-means Clustering represents __________.",
+    "answers": {
+      "a": "The average of all data points in a cluster",
+      "b": "The data point farthest from all other data points",
+      "c": "The data point closest to all other data points",
+      "d": "The median of all data points in a cluster"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "The K-means algorithm begins by __________.",
+    "answers": {
+      "a": "Randomly initializing the cluster centroids",
+      "b": "Assigning all data points to their closest centroids",
+      "c": "Calculating the average distance between data points and centroids",
+      "d": "Iteratively updating the cluster centroids"
+    },
+    "correctAnswer": "a"
+  }
+]
