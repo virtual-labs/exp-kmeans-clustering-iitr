@@ -1,1 +1,1 @@
-### Aim of the experiment
+#### The aim of the experiment is to study the K-means Clustering algorithm to learn how to make predictions based on similarities among data points.
