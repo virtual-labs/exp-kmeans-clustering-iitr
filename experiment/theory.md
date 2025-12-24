@@ -50,13 +50,13 @@ A pizza chain wants to open its delivery centers across a city. To do this, they
 ### **The k-means algorithm works as follows:**
 1. Select the number of clusters (k) to be created.
 <center>  
-<img style="mix-blend-mode: darken;" width="40%" src="images\2.png" alt="Select the desired number of clusters (k)">
+<img style="mix-blend-mode: darken;" width="400px" src="images\2.png" alt="Select the desired number of clusters (k)">
 <figcaption><strong>Fig. 2.1 Select the desired number of clusters (k)</strong></figcaption><br>
 </center>
 
 2. Randomly assign each data point to a cluster.
 <center>  
-<img style="mix-blend-mode: darken;" width="40%" src="images\3.png" alt="Randomly assign data points to clusters">
+<img style="mix-blend-mode: darken;" width="350px" src="images\3.png" alt="Randomly assign data points to clusters">
 <figcaption><strong>Fig. 2.2 Randomly assign data points to clusters</strong></figcaption><br>
 </center>
 
@@ -64,7 +64,7 @@ A pizza chain wants to open its delivery centers across a city. To do this, they
 
 3. Compute the centroid of each cluster.
 <center>  
-<img style="mix-blend-mode: darken;" width="40%" src="images\4.png" alt="Calculate cluster centroid">
+<img style="mix-blend-mode: darken;" width="350px" src="images\4.png" alt="Calculate cluster centroid">
 <figcaption><strong>Fig. 2.3 Calculate cluster centroid</strong></figcaption><br>
 </center>
 
@@ -72,7 +72,7 @@ A pizza chain wants to open its delivery centers across a city. To do this, they
 
 4. Reassign each data point to the cluster whose centroid is closest.
 <center>  
-<img style="mix-blend-mode: darken;" width="40%" src="images\5.png" alt="Align data points with nearest cluster's centroid">
+<img style="mix-blend-mode: darken;" width="350px" src="images\5.png" alt="Align data points with nearest cluster's centroid">
 <figcaption><strong>Fig. 2.4 Align data points with nearest cluster's centroid</strong></figcaption><br>
 </center>
 
