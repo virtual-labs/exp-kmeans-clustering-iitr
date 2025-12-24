@@ -1,0 +1,52 @@
+[
+  {
+    "question": "The initialization step in the K-means Clustering algorithm involves randomly selecting ________ as initial cluster centroids.",
+    "answers": {
+      "a": "Data points",
+      "b": "Cluster indices",
+      "c": "Cluster labels",
+      "d": "Centroid coordinates"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "K-means Clustering is an unsupervised learning algorithm used for __________.",
+    "answers": {
+      "a": "Classification",
+      "b": "Regression",
+      "c": "Dimensionality reduction",
+      "d": "Clustering"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "In K-means Clustering, K refers to __________.",
+    "answers": {
+      "a": "The number of clusters",
+      "b": "The distance metric",
+      "c": "The centroid initialization method",
+      "d": "The number of iterations"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Which step in the K-means algorithm involves reassigning data points to their closest centroids?",
+    "answers": {
+      "a": "Centroid initialization",
+      "b": "Cluster assignment",
+      "c": "Centroid update",
+      "d": "Convergence check"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "K-means Clustering is sensitive to __________.",
+    "answers": {
+      "a": "Initial centroid placement",
+      "b": "The number of dimensions in the data",
+      "c": "Outliers in the data",
+      "d": "All of the above"
+    },
+    "correctAnswer": "d"
+  }
+]

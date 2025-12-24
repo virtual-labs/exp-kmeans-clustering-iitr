@@ -1,0 +1,1 @@
+## To study and implement the K-Means Clustering algorithm for similarity-based grouping
